@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>For You 💝</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-hearts" aria-hidden="true"></div>
+
+  <main class="wrap">
+    <section class="card" id="screen-propose">
+      <div class="sticker">
+        <img src="teddy.jpg" alt="" onerror="this.style.display='none'">
+      </div>
+
+      <h1 class="title">Will you be my valentine?</h1>
+      <p class="sub">
+        Life is an incredible journey, and I want to spend every single second of it with you.
+      </p>
+
+      <div class="btn-row" id="btnRow">
+        <button class="btn yes" id="yesBtn">YES</button>
+        <button class="btn no" id="noBtn">NO</button>
+      </div>
+
+      <p class="tiny">Tip: try pressing “NO” 😈</p>
+    </section>
+
+    <section class="card hidden" id="screen-valentine">
+      <h1 class="title">Happy Valentine Aapi!</h1>
+      <p class="sub">
+        You are the spark that makes my world brighter.
+      </p>
+      <button class="btn yes" data-go="gifts">       SEE MY GIFTS →</button>
+    </section>
+
+    <section class="card hidden" id="screen-gifts">
+      <h1 class="title">Something for You 💘</h1>
+
+      <div class="grid">
+        <button class="gift" data-open="letter">
+          <div class="gift-icon">💌</div>
+          <div class="gift-name">Gift 1</div>
+        </button>
+        <button class="gift" data-open="memories">
+          <div class="gift-icon">📸</div>
+          <div class="gift-name">Gift 2</div>
+        </button>
+        <button class="gift" data-open="quiz">
+          <div class="gift-icon">🧠</div>
+          <div class="gift-name">Gift 3</div>
+        </button>
+      </div>
+
+      <button class="btn glow" data-go="final">FINALLY →</button>
+    </section>
+
+    <section class="card hidden" id="screen-letter">
+      <h1 class="title">A Letter For You 🥺</h1>
+      <div class="paper">
+        <p><b>Dear Aapi ❤️,</b></p>
+        <p>
+          You are my calm, my chaos, and my sweetest habit ❤️
+        </p>
+      </div>
+      <button class="btn soft" data-go="gifts">← BACK</button>
+    </section>
+
+    <section class="card hidden" id="screen-memories">
+      <h1 class="title">Our memories 🙈</h1>
+
+      <div class="photos">
+        <figure class="polaroid"><img src="photo_2026-02-14_15-33-03.jpg" alt=""><figcaption>Sweet Hello</figcaption></figure>
+        <figure class="polaroid"><img src="IMG_4714.JPG" alt=""><figcaption>True Smile</figcaption></figure>
+        <figure class="polaroid"><img src="IMG_4709.JPG" alt=""><figcaption>Tundla </figcaption></figure>
+        <figure class="polaroid"><img src="IMG_4717.JPG" alt=""><figcaption>Only Us</figcaption></figure>
+        <figure class="polaroid"><img src="IMG_4708.JPG" alt=""><figcaption>Tundla Spl.</figcaption></figure>
+        <figure class="polaroid"><img src="IMG_4710.JPG" alt=""><figcaption>Only Us</figcaption></figure>
+      </div>
+
+      <button class="btn soft" data-go="gifts">← BACK</button>
+    </section>
+
+    <section class="card hidden" id="screen-quiz">
+      <h1 class="title">Quiz for you 😚</h1>
+
+      <div class="quizbox">
+        <p class="q" id="qText"></p>
+        <div class="answers" id="answers"></div>
+        <p class="hint" id="hint"></p>
+      </div>
+
+      <button class="btn soft" data-go="gifts">← BACK</button>
+    </section>
+
+    <section class="card hidden" id="screen-final">
+      <h1 class="title"> 🧿💝</h1>
+      <div class="center-img">
+        <img src="IMG_4717.JPG" alt="us" />
+      </div>
+      <p class="sub">
+        You are the best thing that has ever happened to me. Every moment with you becomes a memory that I cherish deeply.
+        Thank you for being my constant support, my greatest joy, my best friend and my girl-friend.
+      </p>
+      <p class="sub">
+        I love you more than words can ever say 💛<br/>
+      </p>
+      <button class="btn glow" data-go="propose">REPLAY ↻</button>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
